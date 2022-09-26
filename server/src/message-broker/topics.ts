@@ -1,0 +1,3 @@
+enum MyMessageBrokerTopics {
+  Kk = "kk",
+}
