@@ -1,11 +1,5 @@
 [
   {
-    "role": "user",
-    "resource": "User",
-    "action": "read:own",
-    "attributes": "*"
-  },
-  {
     "role": "ki",
     "resource": "User",
     "action": "read:own",
@@ -14,7 +8,7 @@
   {
     "role": "user",
     "resource": "User",
-    "action": "create:any",
+    "action": "read:own",
     "attributes": "*"
   },
   {
@@ -26,7 +20,7 @@
   {
     "role": "user",
     "resource": "User",
-    "action": "update:any",
+    "action": "create:any",
     "attributes": "*"
   },
   {
@@ -38,7 +32,7 @@
   {
     "role": "user",
     "resource": "User",
-    "action": "delete:any",
+    "action": "update:any",
     "attributes": "*"
   },
   {
@@ -50,7 +44,7 @@
   {
     "role": "user",
     "resource": "User",
-    "action": "read:any",
+    "action": "delete:any",
     "attributes": "*"
   },
   {
@@ -61,60 +55,66 @@
   },
   {
     "role": "user",
-    "resource": "Ddd",
-    "action": "read:own",
-    "attributes": "*"
-  },
-  {
-    "role": "ki",
-    "resource": "Ddd",
-    "action": "read:own",
-    "attributes": "*"
-  },
-  {
-    "role": "user",
-    "resource": "Ddd",
-    "action": "create:any",
-    "attributes": "*"
-  },
-  {
-    "role": "ki",
-    "resource": "Ddd",
-    "action": "create:any",
-    "attributes": "*"
-  },
-  {
-    "role": "user",
-    "resource": "Ddd",
-    "action": "update:any",
-    "attributes": "*"
-  },
-  {
-    "role": "ki",
-    "resource": "Ddd",
-    "action": "update:any",
-    "attributes": "*"
-  },
-  {
-    "role": "user",
-    "resource": "Ddd",
-    "action": "delete:any",
-    "attributes": "*"
-  },
-  {
-    "role": "ki",
-    "resource": "Ddd",
-    "action": "delete:any",
-    "attributes": "*"
-  },
-  {
-    "role": "user",
-    "resource": "Ddd",
+    "resource": "User",
     "action": "read:any",
     "attributes": "*"
   },
   {
     "role": "ki",
+    "resource": "Ddd",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Ddd",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "ki",
+    "resource": "Ddd",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Ddd",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "ki",
+    "resource": "Ddd",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Ddd",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "ki",
+    "resource": "Ddd",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Ddd",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "ki",
+    "resource": "Ddd",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
     "resource": "Ddd",
     "action": "read:any",
     "attributes": "*"
