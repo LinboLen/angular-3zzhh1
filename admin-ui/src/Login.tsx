@@ -8,7 +8,7 @@ import "./login.scss";
 
 const CLASS_NAME = "login-page";
 
-const Login = ({ theme }: { theme?: object }) => {
+const Login = ({ theme }: any) => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const login = useLogin();
@@ -17,7 +17,7 @@ const Login = ({ theme }: { theme?: object }) => {
   const submit = (e: any) => {
     e.preventDefault();
     login({ username, password }).catch(() =>
-      notify("Invalid email or password")
+      notify("Invalid username or password")
     );
   };
 
@@ -52,7 +52,7 @@ const Login = ({ theme }: { theme?: object }) => {
             <h2>Admin UI</h2>
             <div className={`${CLASS_NAME}__box__message`}>
               Sign in to a React-Admin client with ready-made forms for creating
-              and editing all the data models of your application.
+              and editing all the data models of your application
             </div>
             <form onSubmit={submit}>
               <label>
@@ -66,7 +66,7 @@ const Login = ({ theme }: { theme?: object }) => {
                 />
               </label>
               <label>
-                <span>password</span>
+                <span>Password</span>
 
                 <input
                   name="password"
@@ -104,7 +104,7 @@ const Login = ({ theme }: { theme?: object }) => {
         </div>
         <div className={`${CLASS_NAME}__read-more`}>
           <span>Read </span>
-          <a href="https://docs.amplication.com/docs/api" target="docs">
+          <a href="https://docs.amplication.com/api" target="docs">
             Amplication docs
           </a>
           <span> to learn more</span>
